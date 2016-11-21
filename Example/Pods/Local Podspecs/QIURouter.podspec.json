@@ -1,0 +1,22 @@
+{
+  "name": "QIURouter",
+  "version": "0.1.0",
+  "summary": "A Router for navigation",
+  "description": "for navigation",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QIURouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QiuFeng": "qfviolethill@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QIURouter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QIURouter/Classes/**/*"
+}

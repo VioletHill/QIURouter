@@ -1,20 +1,20 @@
 //
-//  SecondViewController.m
+//  QIUSecondViewController.m
 //  QIURouter
 //
 //  Created by QiuFeng on 21/11/2016.
 //  Copyright © 2016 www.qiufeng.me. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "QIUSecondViewController.h"
 
-@interface SecondViewController ()
+@interface QIUSecondViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
-@implementation SecondViewController
+@implementation QIUSecondViewController
 
 //+ (instancetype)loadFromStoryboard
 //{
@@ -25,7 +25,7 @@
 + (instancetype)loadFromStoryboard:(NSDictionary *)parms
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    SecondViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    QIUSecondViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"QIUSecondViewController"];
     viewController.label.text = parms[@"text"];
     return viewController;
 }

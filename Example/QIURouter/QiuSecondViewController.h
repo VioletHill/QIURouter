@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  QIUSecondViewController.h
 //  QIURouter
 //
 //  Created by QiuFeng on 21/11/2016.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface QIUSecondViewController : UIViewController
 
 @end

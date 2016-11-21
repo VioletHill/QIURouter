@@ -9,7 +9,56 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+AppDelegate 
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {      
+    [QIURouter map:@"second" toController:[QIUSecondViewController class]];
+}
+```
+    
+Your ViewController
+
+
+```
+@interface QIUSecondViewController ()
+@end
+    
+@implementation QIUSecondViewController
+
+//+ (instancetype)loadFromStoryboard
+//{
+//    
+//}
+
+// or
+
++ (instancetype)loadFromStoryboard:(NSDictionary *)parms
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    QIUSecondViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"QIUSecondViewController"];
+    viewController.label.text = parms[@"text"];
+    return viewController;
+}
+    
+@end
+```
+
+Then, you can use
+
+
+```
+[QIURouter open:@"second" params:@{@"text": @"Param from ViewControlelr",
+                                       @"viewControllerTitle": @"titleFromFirstViewController"} withViewController:self];
+```
+
+
+
 ## Requirements
+
+iOS 8.0
+
+Xcode 8
 
 ## Installation
 

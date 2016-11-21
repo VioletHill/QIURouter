@@ -7,6 +7,7 @@
 //
 
 #import "QIUViewController.h"
+#import "QIURouter.h"
 
 @interface QIUViewController ()
 
@@ -24,6 +25,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pushButtonTouchUpInside:(UIButton *)sender {
+    [QIURouter open:@"second" params:@{@"text": @"Param from ViewControlelr",
+                                       @"viewControllerTitle": @"titleFromFirstViewController"} withViewController:self];
 }
 
 @end

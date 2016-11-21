@@ -1,0 +1,16 @@
+PODS:
+  - QIURouter (0.1.0)
+
+DEPENDENCIES:
+  - QIURouter (from `../`)
+
+EXTERNAL SOURCES:
+  QIURouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QIURouter: 0e1e8c044c733008290f40ca1e791ab962ed9655
+
+PODFILE CHECKSUM: 0a88a77ebbf8ab78a580b93b7ed63e6096065d4e
+
+COCOAPODS: 1.1.1

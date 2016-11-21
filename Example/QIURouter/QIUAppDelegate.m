@@ -8,10 +8,14 @@
 
 #import "QIUAppDelegate.h"
 
+#import "QiuSecondViewController.h"
+#import "QIURouter.h"
+
 @implementation QIUAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [QIURouter map:@"second" toController:[QIUSecondViewController class]];
     // Override point for customization after application launch.
     return YES;
 }
