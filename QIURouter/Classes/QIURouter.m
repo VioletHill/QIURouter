@@ -44,6 +44,15 @@ static NSMutableDictionary<NSString *, Class> *_mapController = nil;
     return _mapController;
 }
 
++ (void)setMapController:(NSMutableDictionary<NSString *,Class> *)mapController
+{
+    if (_mapController != mapController) {
+        _mapController = mapController;
+    }
+}
+
+#pragma mark - PublicMethod
+
 + (void)map:(NSString *)format toController:(Class)controllerClass {
     self.mapController[format] = controllerClass;
 }
