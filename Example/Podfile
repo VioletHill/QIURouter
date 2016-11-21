@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QIURouter_Example' do
+  pod 'QIURouter', :path => '../'
+
+  target 'QIURouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
